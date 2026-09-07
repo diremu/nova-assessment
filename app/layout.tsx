@@ -1,13 +1,25 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Archivo, Inter, IBM_Plex_Mono } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
 
-const archivo = localFont({src: "../public/fonts/Archivo-VariableFont_wght.ttf"} );
+const archivo = Archivo({
+  variable: "--font-display",
+  subsets: ["latin"],
+  weight: ["600", "700"],
+});
 
-const inter = localFont({src: "../public/fonts/Inter-VariableFont_wght.ttf"} );
+const inter = Inter({
+  variable: "--font-body",
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+});
 
-const plexMono = localFont({src: "../public/fonts/IBMPlexMono-Regular.ttf",});
+const plexMono = IBM_Plex_Mono({
+  variable: "--font-mono",
+  subsets: ["latin"],
+  weight: ["400", "500"],
+});
 
 export const metadata: Metadata = {
   title: "NOVA — See what matters. Miss nothing.",
@@ -20,7 +32,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${archivo.className} ${inter.className} ${plexMono.className}`}
+      className={`${archivo.variable} ${inter.variable} ${plexMono.variable}`}
     >
       <body className="min-h-full flex flex-col font-body bg-paper text-ink dark:bg-ink dark:text-paper antialiased">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
