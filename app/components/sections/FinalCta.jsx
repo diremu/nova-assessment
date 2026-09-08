@@ -3,7 +3,7 @@ export default function FinalCta() {
     <section id="contact" className="bg-ink py-20 md:py-28">
       <div className="container-xw text-center">
         <h2 className="font-display font-bold text-3xl tracking-tight text-paper sm:text-4xl md:text-5xl max-w-2xl mx-auto">
-          Stop reviewing footage after the fact
+          Let's be one step ahead together
         </h2>
         <p className="mt-4 text-steel-soft max-w-md mx-auto">
           Get a walkthrough on your own site's footage — no generic demo reel.
