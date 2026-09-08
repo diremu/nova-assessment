@@ -2,7 +2,7 @@
 
 This is the landing page for **NOVA**, a fake AI surveillance
 company that offers cameras and detection software to customers, built as a
-front-end development internship assignment for Findestinations Internet Private Limited.
+front-end development internship assignment for Sankar Group.
 
 ## Technologies used
 
