@@ -6,9 +6,15 @@ function SocialBadge({ image, href, ariaLabel }) {
     <a
       href={href}
       aria-label={ariaLabel}
-      className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-line-dark font-mono text-[11px] text-steel-soft hover:border-steel-soft hover:text-paper transition-colors"
+      className="group inline-flex h-8 w-8 items-center justify-center rounded-full border border-line-dark hover:border-steel-soft transition-colors"
     >
-      <Image src={image.src} alt={image.alt} width={16} height={16} />
+      <Image
+        src={image.src}
+        alt={image.alt}
+        width={16}
+        height={16}
+        className="brightness-0 invert opacity-70 transition-opacity group-hover:opacity-100"
+      />
     </a>
   );
 }
@@ -55,9 +61,9 @@ export default function Footer() {
               evidence, not just footage.
             </p>
             <div className="mt-6 flex items-center gap-3">
-              <SocialBadge image={ {src: '/linkedin.svg', alt: 'NOVA on LinkedIn'}} href="#" ariaLabel="NOVA on LinkedIn" />
-              <SocialBadge image={ {src: '/twitter.svg', alt: 'NOVA on X'}} href="#" ariaLabel="NOVA on X" />
-              <SocialBadge image={ {src: '/github.svg', alt: 'NOVA on GitHub'}} href="#" ariaLabel="NOVA on GitHub" />
+              <SocialBadge image={{ src: "/linkedin.svg", alt: "NOVA on LinkedIn" }} href="#" ariaLabel="NOVA on LinkedIn" />
+              <SocialBadge image={{ src: "/twitter.svg", alt: "NOVA on X" }} href="#" ariaLabel="NOVA on X" />
+              <SocialBadge image={{ src: "/github.svg", alt: "NOVA on GitHub" }} href="#" ariaLabel="NOVA on GitHub" />
             </div>
           </div>
 

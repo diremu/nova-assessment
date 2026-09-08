@@ -39,11 +39,11 @@ export default function Features() {
       <div className="container-xw">
         <div className="max-w-xl">
           <h2 className="font-display font-bold text-3xl tracking-tight text-ink dark:text-paper sm:text-4xl">
-            Everything a monitoring team needs, none of the noise
+            Everything a monitoring team needs in a 24/7 package that is ready from the onset.
           </h2>
           <p className="mt-4 text-steel leading-relaxed">
-            NOVA replaces the wall of passive monitors with a system that watches
-            back, so your team spends time on incidents, not footage.
+            NOVA replaces the massive wall of monitors and guards with a system that watches
+            back, so your team spends time on incidents and response, not idling.
           </p>
         </div>
 

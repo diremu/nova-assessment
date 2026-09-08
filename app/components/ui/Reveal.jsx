@@ -1,6 +1,6 @@
 "use client";
 
-import { useInView } from "@/hooks/useInView";
+import { useInView } from "../../hooks/useInView";
 
 // A single, restrained reveal treatment used consistently across sections
 // on first scroll into view \u2014 deliberately not applied to every card or

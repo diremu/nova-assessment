@@ -1,7 +1,7 @@
 "use client";
 
-import { useInView } from "@/hooks/useInView";
-import { useCountUp } from "@/hooks/useCountUp";
+import { useInView } from "../../hooks/useInView";
+import { useCountUp } from "../../hooks/useCountUp";
 
 const STATS = [
   { end: 340, suffix: "+", label: "active sites" },

@@ -6,7 +6,7 @@ export default function FinalCta() {
           Stop reviewing footage after the fact
         </h2>
         <p className="mt-4 text-steel-soft max-w-md mx-auto">
-          Get a walkthrough on your own site&apos;s footage — no generic demo reel.
+          Get a walkthrough on your own site's footage — no generic demo reel.
         </p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
           <a

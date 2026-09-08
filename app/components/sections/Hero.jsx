@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ShieldCheck } from "lucide-react";
 
 export default function Hero() {
@@ -11,9 +12,9 @@ export default function Hero() {
           </span>
 
           <h1 className="mt-6 font-display font-bold text-4xl leading-[1.1] tracking-tight text-ink dark:text-paper sm:text-5xl lg:text-[3.25rem]">
-            See what matters.
+            See what matters most.
             <br />
-            Miss nothing.
+            Miss nothing, Ever.
           </h1>
 
           <p className="mt-6 max-w-md text-lg text-steel leading-relaxed">
@@ -38,7 +39,7 @@ export default function Hero() {
           </div>
 
           <p className="mt-6 text-xs text-steel-soft">
-            No credit card required · deploys alongside your current NVR
+            No credit card required · Deploys alongside your current NVR setup
           </p>
         </div>
 
@@ -52,35 +53,29 @@ export default function Hero() {
               </span>
             </div>
 
-            <div className="grid grid-cols-2 gap-px bg-line dark:bg-line-dark">
-              {[
-                { id: "CAM 01", detect: true },
-                { id: "CAM 02", detect: false },
-                { id: "CAM 03", detect: false },
-                { id: "CAM 04", detect: false },
-              ].map((cam) => (
-                <div key={cam.id} className="relative aspect-video bg-paper dark:bg-ink">
-                  <span className="absolute left-2 top-2 font-mono text-[10px] text-steel-soft">
-                    {cam.id}
-                  </span>
-                  {cam.detect && (
-                    <div className="absolute left-[28%] top-[22%] h-[46%] w-[36%]">
-                      <div className="absolute -top-px -left-px h-3 w-3 border-l-2 border-t-2 border-signal" />
-                      <div className="absolute -top-px -right-px h-3 w-3 border-r-2 border-t-2 border-signal" />
-                      <div className="absolute -bottom-px -left-px h-3 w-3 border-l-2 border-b-2 border-signal" />
-                      <div className="absolute -bottom-px -right-px h-3 w-3 border-r-2 border-b-2 border-signal" />
-                      <span className="absolute -top-5 left-0 whitespace-nowrap rounded bg-signal px-1.5 py-0.5 font-mono text-[10px] text-paper">
-                        Person · 98%
-                      </span>
-                    </div>
-                  )}
-                </div>
-              ))}
+            <div className="relative aspect-600/290 overflow-hidden bg-ink">
+              <Image
+                src="/images/hero-cam.png"
+                alt="Warehouse aisle camera feed"
+                fill
+                sizes="(min-width: 1024px) 560px, 100vw"
+                priority
+                className="object-cover"
+              />
+              <div className="absolute left-[48%] top-[19%] h-[17%] w-[5%] min-w-[26px]">
+                <div className="absolute -top-px -left-px h-4 w-4 border-l-2 border-t-2 border-signal" />
+                <div className="absolute -top-px -right-px h-4 w-4 border-r-2 border-t-2 border-signal" />
+                <div className="absolute -bottom-px -left-px h-4 w-4 border-l-2 border-b-2 border-signal" />
+                <div className="absolute -bottom-px -right-px h-4 w-4 border-r-2 border-b-2 border-signal" />
+                <span className="absolute -top-6 left-1/2 -translate-x-1/2 whitespace-nowrap rounded bg-signal px-1.5 py-0.5 font-mono text-[11px] text-paper">
+                  Person · 98%
+                </span>
+              </div>
             </div>
 
             <div className="border-t border-line dark:border-line-dark px-4 py-3">
               <p className="font-mono text-[11px] text-steel">
-                09:41:22 — unrecognized entry, west dock perimeter
+                15:37:36 — unrecognized entry, BV Rear aisle
               </p>
             </div>
           </div>

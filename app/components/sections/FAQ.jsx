@@ -18,7 +18,7 @@ const FAQS = [
   },
   {
     q: "Can footage be used as legal evidence?",
-    a: "Yes. Every exported clip carries a signed chain-of-custody log \u2014 who accessed it, when, and what was exported \u2014 which is what most jurisdictions require for footage to be admissible.",
+    a: "Yes. Every exported clip carries a signed chain-of-custody log: who accessed it, when, and what was exported, which is what most jurisdictions require for footage to be admissible.",
   },
   {
     q: "What happens if my internet connection drops?",
@@ -38,10 +38,10 @@ export default function FAQ() {
       <div className="container-xw grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
         <div>
           <h2 className="font-display font-bold text-3xl tracking-tight text-ink dark:text-paper sm:text-4xl">
-            Questions, answered
+            Frequently Asked Questions
           </h2>
           <p className="mt-4 text-steel leading-relaxed max-w-sm">
-            Can&apos;t find what you&apos;re looking for? Reach out and a real person on
+            Can't find what you're looking for? Reach out and a real person on
             our team will get back to you.
           </p>
         </div>

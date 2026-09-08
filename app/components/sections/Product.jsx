@@ -39,7 +39,7 @@ export default function Product() {
                 <p className="mt-1 text-sm text-steel leading-relaxed">
                   Models process footage on-site before anything touches the
                   network, which keeps alerts fast and raw video off servers
-                  it doesn&apos;t need to be on.
+                  it doesn't need to be on.
                 </p>
               </div>
             </div>
